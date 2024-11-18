@@ -12,6 +12,4 @@
 }
 - (void)headerCell;
 - (void)defaultsettings:(PSSpecifier*)specifier;
-- (void)openTwitter;
-- (void)donationLink;
 @end
