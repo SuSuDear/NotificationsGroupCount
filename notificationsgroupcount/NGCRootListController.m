@@ -185,17 +185,4 @@
 	posix_spawn(&pid, "/var/jb/usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
 	posix_spawn(&pid, "/usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
 }
-
-/* iOS 13 deprecated these functions */
--(void)openTwitter {
-	UIApplication *application = [UIApplication sharedApplication];
-	NSURL *URL = [NSURL URLWithString:@"https://www.x.com/0xkuj"];
-	[application openURL:URL options:@{} completionHandler:^(BOOL success) {return;}];
-}
-
--(void)donationLink {
-	UIApplication *application = [UIApplication sharedApplication];
-	NSURL *URL = [NSURL URLWithString:@"https://www.paypal.me/0xkuj"];
-	[application openURL:URL options:@{} completionHandler:^(BOOL success) {return;}];
-}
 @end
